@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Portfolio | Mateus Farias</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo"> Mateus Farias <span>.</span></a>
+
+        <nav class="navbar">
+            <a href="#sobre" style="--i:2">Sobre</a>
+            <a href="#projetos" style="--i:4">Projetos</a>
+            <a href="#contato" style="--i:5">Contato</a>
+        </nav>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="home-conteudo">
+            <h1>Desenvolvedor de Software</h1>
+            <h3><span class="texto"></span></h3>
+            <p>Seja bem-vindo ao meu portfólio, onde compartilho um pouco da minha trajetória e dos projetos que venho
+                desenvolvendo</p>
+            
+            
+            <div class="home-sci">
+                <a href="https://github.com/MateusFariasS" target="_blank" style="--i:6"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/mateusf.s_/" style="--i:7"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/mateusfariassantos" style="--i:8"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+            <a href="#sobre" class="btn-box">Mais sobre mim</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="sobre">
+            <div class="section-content">
+                <h2>Sobre Mim</h2>
+                <div class="about-grid">
+                    <div>
+                        <p>Sou estudante de Engenharia de Software, apaixonado por tecnologia, resolução de problemas e
+                            desenvolvimento de soluções que gerem impacto real. Ao longo da minha formação, venho adquirindo
+                            conhecimentos sólidos em programação, análise de sistemas, arquitetura de software e
+                            metodologias ágeis. Este portfólio reúne projetos acadêmicos e pessoais que refletem minha
+                            evolução técnica, capacidade de trabalho em equipe e comprometimento com a qualidade do código e
+                            da experiência do usuário. Busco constantemente aprender, inovar e aplicar boas práticas no
+                            desenvolvimento de software.</p>
+                    </div>
+                    <div>
+                        <h3>Habilidades <span>Técnicas</span></h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacao">
+            <div class="section-content">
+                <h2>Formação Acadêmica</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 - </div>
+                        <div class="timeline-title">Bacharelado em Engenharia de Software</div>
+                        <div class="timeline-location">Instituto de Ensino Superior-ICEV</div>
+                        <p>Formação completa em Engenharia de Software com foco em desenvolvimento web, algoritmos e
+                            estruturas de dados. Bem como construir ferramentas e soluções, em um ambiente empreendedor e moderno.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <div class="section-content">
+                <h2>Projetos do GitHub</h2>
+                <p>Abaixo estão meus projetos públicos do GitHub, carregados automaticamente via API:</p>
+                <div id="github-projects" class="projects-grid">
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-2x"></i>
+                        <p>Carregando projetos...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="section-content">
+                <h2>Entre em Contato</h2>
+                <div class="contact-container">
+                    <div class="contact-info-box">
+                        <p>Estou disponível para novos projetos e oportunidades. Preencha o formulário ao lado para entrar
+                            em contato comigo ou utilize os meios de contato abaixo:</p>
+                        <div class="contact-direct">
+                            <div class="contact-item">
+                                <i class='bx bxl-gmail'></i>
+                                <span>mateus.fsantos08@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class='bx bx-phone'></i>
+                                <span>(86) 0000-0000</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class='bx bx-map'></i>
+                                <span>Teresina, Brasil</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-box">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                        </form>
+                        <div id="form-success" class="form-success">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Mensagem enviada com sucesso! Entrarei em contato em breve.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Mateus Farias. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="https://github.com/MateusFariasS" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/mateusfariassantos" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/mateusf.s_/" target="_blank"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <p>Desenvolvido por Mateus Farias</p>
+    </footer>
+
+    <a href="#" class="back-to-top" id="back-to-top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
