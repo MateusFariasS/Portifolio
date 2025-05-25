@@ -170,7 +170,7 @@ function handleContactForm() {
       }
       
       try {
-        await emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+        await emailjs.send("service_tjbargv", "template_25m2ylk", {
           from_name: name,
           from_email: email,
           subject: subject,
