@@ -1,6 +1,6 @@
 
 var typed = new Typed(".texto", {
-  strings: ["Estudante de Engenharia de Software", "Entusiasta de Tecnologia"],
+  strings: ["Estudante de Engenharia de Software", "Desenvolvedor Front-end", "Entusiasta de Tecnologia"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
@@ -150,15 +150,15 @@ function animateSectionsOnScroll() {
   });
 }
 
+
 function handleContactForm() {
   const contactForm = document.getElementById("contact-form");
   const formSuccess = document.getElementById("form-success");
 
   if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
+    contactForm.addEventListener("submit", async (e) => {
       e.preventDefault();
       
-
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
       const subject = document.getElementById('subject').value;
@@ -169,21 +169,25 @@ function handleContactForm() {
         return;
       }
       
-      if (!validateEmail(email)) {
-        alert('Por favor, insira um email válido.');
-        return;
-      }
+      try {
+        await emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+          from_name: name,
+          from_email: email,
+          subject: subject,
+          message: message,
+          to_email: "mateus.fsantos08@gmail.com"
+        });
 
-
-      setTimeout(() => {
         formSuccess.classList.add("show");
-
         contactForm.reset();
-
+        
         setTimeout(() => {
           formSuccess.classList.remove("show");
         }, 5000);
-      }, 1000);
+      } catch (error) {
+        console.error("Error sending email:", error);
+        alert("Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.");
+      }
     });
   }
 }
