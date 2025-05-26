@@ -210,7 +210,7 @@ function setupSmoothScrolling() {
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         window.scrollTo({
-          top: targetElement.offsetTop - 80, // Offset for header
+          top: targetElement.offsetTop - 80, 
           behavior: 'smooth'
         });
       }
